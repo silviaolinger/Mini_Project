@@ -1,0 +1,115 @@
+HTML{
+    font-family: 'Courier New', Courier, monospace;
+  }
+ :root{
+  --main-radius:5px;
+  --main-padding:5px;
+  --dark: #704d80;
+  --light: rgba(229, 201, 235, 0.98);
+  
+ }
+body{
+    background: linear-gradient(#d0cdcd, #4c4c4d);
+}
+ 
+   .container{
+    display:grid;
+    height:100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 1.2fr 1.2fr 0.2fr;
+    grid-template-areas: "nav nav nav"
+                         "content1 content2 content3"
+                         "content4 content5 content6"
+                         "footer footer footer";
+    grid-gap:3em
+   }
+
+   nav{
+    background-color: var(--dark);
+    grid-area:nav;
+    text-align: center;
+
+   }
+.Content1{
+   grid-area: content1;
+      display:flex;
+      flex-direction:column;
+      flex-wrap: wrap;
+}
+div pre {
+    transition-property:font-size;
+    transition-duration: 4s;
+}
+.text{
+   font-size: 10px;
+   user-select:all;
+    background-image: linear-gradient(rgba(232, 102, 236, 0.3) 0%,
+    rgba(232, 102, 236, 0.6) 100%);
+    border-radius: 50px;
+}
+.text:hover{
+    font-size: 14px;
+}
+
+.Content1 , .Content2, .Content3, 
+.Content4, .Content5, .Content6
+{
+    border-radius: 2px;
+    border-style: dotted;
+    border-color: var(--dark);
+    justify-content: center;
+    
+
+}
+.Content-Header{
+    text-align: center;
+    border: 1px solid var(--dark);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size:24px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom-style: dotted;
+    position: relative;
+    margin-top: -30px;
+    margin-left: 10px;
+    margin-right:10px;
+    background-color: var(--light);
+  }
+    footer {
+        background-color:var(--dark);
+        grid-area:footer;
+        text-align:center;
+    }
+    @media only screen and (max-width:768px){
+     .container{
+        
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:1.2fr 1.2fr 1.2fr 1.2fr 0.3fr;
+        grid-template-areas:"nav nav"
+                            "content1 content2"
+                            "content3 content4"
+                            "content5 content6"
+                            "footer footer";
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .container
+    {
+     grid-template-columns: 1fr;
+     grid-template-rows: 0.3fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 0.3;
+     grid-template-areas:"nav"
+                         "content1"
+                         "content2"
+                         "content3"
+                         "content4"
+                         "content5"
+                         "content6"
+                         "footer";
+
+    }
+}
+    
+

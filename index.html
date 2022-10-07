@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Display</title>
+    <link rel="stylesheet" href="./assetsw2/css/style.css">
+  </head>
+  <body>
+  <div class="container">  
+    <nav>
+      <h1> Project Week 2 </h1>
+      <p> Lorem ipsum dolor sit amet, 
+       <br> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</br>
+       <br>labore et dolore magna aliqua.</br> </p>
+ </nav>
+
+ <div class="Content1">
+     <div class="Content-Header">
+        FlexBox Row</div>
+        <div class="Content-desc">
+     <p>Use this 3 properties to create a FlexBox layout. </p>
+     <pre class=text>
+        .row{
+            display:flex; 
+            flex-direction: row;
+            flex-wrap:wrap;
+        }
+     </pre>
+
+</div>
+</div>
+<div class="Content2">
+    <div class="Content-Header">FlexBox Column</div>
+    <p>Use this  to create a FlexBox Column layout. </p>
+    <pre class=text>
+       .column{
+           display:flex;
+           flex-direction: column;
+           
+       }
+    </pre>
+
+</div>
+    <div class="Content3">
+        <div class="Content-Header">CSS Grid Layout</div>
+    <p>Build a 12 column layout using CSS Grid. </p>
+    <pre class=text>
+       .grid{
+           display:grid;
+           width: 100%;
+           repeat (12, 1fr);
+       }
+    </pre>
+
+</div>
+<div class="Content4">
+    <div class="Content-Header"> Linear Gradients</div>
+    <p>This will create a background linear gradient from top to bottom. </p>
+    <pre class=text>
+       .linear-gradient-background {
+           background-image:linear-gradient(
+            rgba(232, 102, 236, 0.3) 0%,
+            rgba(232, 102, 236, 0.6) 100%
+           );
+           
+           
+        }
+    </pre>
+
+</div>
+    <div class="Content5">
+        <div class="Content-Header"> Box Transiton Glow</div>
+        <p>Use transition and box shadows to glow on hover. </p>
+        <pre class=text>
+            .code-card .card-header{
+            boder-radius:8px;
+            transition:all 0.5s ease-in-out;
+            }
+            .code-card:hover
+            .code-card:hover, .card-header{
+                box-shadow: inset 0px, 0px, 8px 
+                    rgba(232, 102, 236, 1), 0 0 15px,
+                    rgba(232, 102, 236, 1);
+            }
+        </pre>
+
+    </div>
+    <div class="Content6">
+        <div class="Content-Header"> Overlay Card with Title</div>
+        <p>Use postion properties and navagate margins to raise elements higher than their natural starting point. </p>
+        <pre class=text>
+           
+               .card-header{
+               position: relative;
+               margin-top: -10px;
+               
+           }
+        </pre>
+    
+    </div>
+
+    <footer>
+        <p>Made with Love and CSS </p>
+    </footer>
+  </div>
+</body>      
+</html>
